@@ -1,6 +1,6 @@
 # Password Strength Calculator
 
-This script calculates the strength of your password. Checking parameters:
+This script calculates the strength of your password in range from 1 to 10. Checking parameters:
 * Password length
 * Digits
 * Upper- and lowercase letters
