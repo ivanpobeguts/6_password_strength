@@ -50,13 +50,13 @@ def check_password_in_blacklist(password, blacklist):
 
 def get_password_strength(password, blacklist):
     init_strength = 2
-    return (init_strength
-            + check_digits(password)
-            + check_letters(password)
-            + 2 * check_case_sensitivity(password)
-            + 2 * check_special_symbols(password)
-            - check_password_in_blacklist(password, blacklist)
-            + count_length_points(password))
+    return (init_strength +
+            check_digits(password) +
+            check_letters(password) +
+            2 * check_case_sensitivity(password) +
+            2 * check_special_symbols(password) -
+            check_password_in_blacklist(password, blacklist) +
+            count_length_points(password))
 
 
 def get_parser():
